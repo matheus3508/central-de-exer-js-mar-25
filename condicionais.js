@@ -95,11 +95,12 @@ function exerc06() {
 } 
 
 function exerc07 (){
-let numero1 = prompt ("Digite o primeiro número:");
+    debugger
+let numero1 =Number (prompt ("Digite o primeiro número:"));
 
 let operacao = prompt("Digite a operação (+, -, *, /):");
 
-let numero2 = prompt("Digite o segundo número:");
+let numero2 = Number(prompt("Digite o segundo número:"));
 
 
 if (operacao === "+") {
@@ -109,13 +110,25 @@ if (operacao === "+") {
 } else if (operacao === "*") {
     resultado = numero1 * numero2;
 } else if (operacao === "/") {
-    
+    resultado = numero1 / numero2;
 }
 alert("O resultado é: " + resultado);
    
 }
-exerc07 ()
 
+function exerc08 (){
+    let valor = prompt("Digite o valor de sua compra");
+   
+    if (valor >=100 ) {
+        valor = valor * 0,10;
+        alert("Desconto aplicado!")
+    } else {
+        alert("desconto não aplicado")
+    }
+         
+}
+
+exerc08()
 
 
 
