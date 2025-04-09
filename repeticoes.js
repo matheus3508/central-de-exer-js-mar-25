@@ -85,3 +85,16 @@ function exe5() {
     }
     console.log("Contagem regressiva concluída!");
 }
+function exe6(){
+    function AnoBissexto(ano) {
+        if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+            console.log(ano + " é um ano bissexto.");
+        } else {
+            console.log(ano + " não é um ano bissexto.");
+        }
+    }
+    
+    let ano = prompt("Digite um ano para verificar se é bissexto:");
+    AnoBissexto(Number(ano));
+    
+} exe6()
