@@ -8,4 +8,3 @@ function exemfilter(){
 
 
 }
-exemfilter()
